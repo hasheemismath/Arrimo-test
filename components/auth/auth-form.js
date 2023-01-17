@@ -61,6 +61,7 @@ function AuthForm() {
       try {
         const result = await createUser(enteredEmail, enteredPassword);
         alert(result.message);
+        router.reload()
       } catch (error) {
         alert(error);
       }

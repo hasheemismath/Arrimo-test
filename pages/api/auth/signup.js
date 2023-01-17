@@ -40,6 +40,6 @@ export default async function handler(req, res) {
     .collection("users")
     .insertOne({ email: email, password: hashedPassword });
 
-  res.status(201).json({ message: "Created user!" });
+  res.status(201).json({ message: "User Created Successfully!" });
   client.close();
 }
